@@ -1,5 +1,5 @@
-# bump: libpkgmanifest-version /LIBPKGMANIFEST_VERSION="(.*)"/ https://github.com/rpm-software-management/libpkgmanifest/archive/refs/tags/v(.*).tar.gz|re:v(.*).tar.gz/$1/|semver:*
-export LIBPKGMANIFEST_VERSION="0.5.9"
+# bump: libpkgmanifest-version /LIBPKGMANIFEST_VERSION="(.*)"/ git:https://github.com/rpm-software-management/libpkgmanifest.git|*
+LIBPKGMANIFEST_VERSION="0.5.9"
 
 ###
 ### Build control file for the libpkgmanifest port
@@ -9,7 +9,7 @@ export LIBPKGMANIFEST_VERSION="0.5.9"
 ### Required Environment Variables
 ###
 export ZOPEN_BUILD_LINE="STABLE"
-export ZOPEN_STABLE_URL="https://github.com/rpm-software-management/libpkgmanifest/archive/refs/tags/v0.5.9.tar.gz"
+export ZOPEN_STABLE_URL="https://github.com/rpm-software-management/libpkgmanifest/archive/refs/tags/v${LIBPKGMANIFEST_VERSION}.tar.gz"
 export ZOPEN_STABLE_DEPS="cmake make pkgconfig yamlcpp check_python"
 export ZOPEN_DEV_URL=""
 export ZOPEN_DEV_DEPS="cmake make pkgconfig yamlcpp check_python"

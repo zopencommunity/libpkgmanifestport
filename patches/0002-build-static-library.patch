@@ -1,0 +1,13 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 8ac7689..ddd01f8 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -5,7 +5,7 @@ list(APPEND libpkgmanifest_PC_REQUIRES_PRIVATE)
+ 
+ include_directories(.)
+ 
+-add_library(libpkgmanifest SHARED ${libpkgmanifest_SOURCES})
++add_library(libpkgmanifest STATIC ${libpkgmanifest_SOURCES})
+ set_target_properties(libpkgmanifest PROPERTIES OUTPUT_NAME "pkgmanifest")
+ set_target_properties(libpkgmanifest PROPERTIES SOVERSION 0)
+ set_property(TARGET libpkgmanifest PROPERTY POSITION_INDEPENDENT_CODE ON)

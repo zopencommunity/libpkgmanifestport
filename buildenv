@@ -1,5 +1,5 @@
 # bump: libpkgmanifest-version /LIBPKGMANIFEST_VERSION="(.*)"/ git:https://github.com/rpm-software-management/libpkgmanifest.git|*
-LIBPKGMANIFEST_VERSION="0.5.9"
+LIBPKGMANIFEST_VERSION="0.6.1"
 
 ###
 ### Build control file for the libpkgmanifest port
